@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Download Website</title>
+    <title>Sukuna Downloader</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
-        h1 { color: #333; }
-        .container { margin: 20px auto; padding: 20px; background: white; width: 80%; border-radius: 10px; box-shadow: 0px 0px 10px gray; }
-        video { max-width: 100%; border-radius: 10px; }
-        button { padding: 10px 20px; font-size: 18px; margin-top: 10px; border: none; background: #28a745; color: white; cursor: pointer; border-radius: 5px; }
-        button:hover { background: #218838; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff5733;
+        }
+        video {
+            width: 80%;
+            max-width: 720px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: white;
+            background-color: #ff5733;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .download-btn:hover {
+            background-color: #e64a19;
+        }
     </style>
 </head>
 <body>
-    <h1>Download My Files</h1>
 
-    <div class="container">
-        <h2>File 1: Auto Gun Script</h2>
-        <p>Watch this tutorial:</p>
-        <video controls>
-            <source src="https://raw.githubusercontent.com/GODOWNERV3/Sukunadownloader/main/Screenrecorder-2025-03-12-20-10-49-497.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <br>
-        <a href="https://www.mediafire.com/file/7dkwm3yjqx0q1q9/game_patch_3.7.0.19735.pak/file" target="_blank">
-            <button>Download Now</button>
-        </a>
-    </div>
+    <h1>🔻 How to Use Sukuna Downloader 🔻</h1>
 
-    <div class="container">
-        <h2>File 2: Advanced Mod</h2>
-        <p>Watch this tutorial:</p>
-        <video controls>
-            <source src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <br>
-        <a href="https://www.mediafire.com/file/YOUR_FILE_LINK_2" target="_blank">
-            <button>Download Now</button>
-        </a>
-    </div>
+    <!-- 📌 Video Embed (GitHub Raw Link) -->
+    <video controls>
+        <source src="https://raw.githubusercontent.com/GODOWNERV3/Sukunadownloader/main/Screenrecorder-2025-03-12-20-10-49-497.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 📌 Download Button (Direct MediaFire Link) -->
+    <p>
+        <a href="https://www.mediafire.com/file/7dkwm3yjqx0q1q9/game_patch_3.7.0.19735.pak/file" class="download-btn" download>📥 Download Now</a>
+    </p>
 
 </body>
 </html>
