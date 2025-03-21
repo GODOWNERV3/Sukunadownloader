@@ -5,53 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sukuna Downloader</title>
     <style>
+        /* General Page Style */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
             background-color: #121212;
             color: white;
+            text-align: center;
             margin: 0;
             padding: 20px;
         }
         h1 {
             color: #ff5733;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Video Player */
+        .video-container {
+            margin-bottom: 30px;
         }
         video {
-            width: 80%;
+            width: 90%;
             max-width: 720px;
             border-radius: 10px;
-            margin-top: 20px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 87, 51, 0.7);
+        }
+
+        /* Download Buttons */
+        .download-container {
+            margin-top: 10px;
         }
         .download-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 25px;
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 15px;
             font-size: 18px;
             color: white;
-            background-color: #ff5733;
+            background: linear-gradient(45deg, #ff5733, #e64a19);
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            transition: 0.3s;
         }
         .download-btn:hover {
-            background-color: #e64a19;
+            background: linear-gradient(45deg, #e64a19, #ff5733);
+            transform: scale(1.05);
+        }
+
+        /* Telegram Button (Fixed at Bottom-Right) */
+        .telegram-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0088cc;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(0, 136, 204, 0.5);
+            transition: 0.3s;
+        }
+        .telegram-btn:hover {
+            background-color: #006699;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
 
-    <h1>🔻 How to Use Sukuna Downloader 🔻</h1>
+    <h1>🚀 Sukuna Downloader</h1>
+    <p>🔻 Watch the tutorial below and download the required files 🔻</p>
 
-    <!-- 📌 Video Embed (GitHub Raw Link) -->
-    <video controls>
-        <source src="https://raw.githubusercontent.com/GODOWNERV3/Sukunadownloader/main/Screenrecorder-2025-03-12-20-10-49-497.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <!-- 📌 Video & Download for File 1 -->
+    <div class="video-container">
+        <h2>📌 File 1: Tutorial</h2>
+        <video controls>
+            <source src="https://github.com/GODOWNERV3/SUKUNA/raw/refs/heads/main/Screenrecorder-2025-03-12-20-10-49-497.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="download-container">
+            <a href="https://www.mediafire.com/file/YOUR_FILE_ID_1/YOUR_FILENAME_1.apk/file" class="download-btn" download>📥 Download File 1</a>
+        </div>
+    </div>
 
-    <!-- 📌 Download Button (Direct MediaFire Link) -->
-    <p>
-        <a href="https://www.mediafire.com/file/7dkwm3yjqx0q1q9/game_patch_3.7.0.19735.pak/file" class="download-btn" download>📥 Download Now</a>
-    </p>
+    <!-- 📌 Video & Download for File 2 -->
+    <div class="video-container">
+        <h2>📌 File 2: Tutorial</h2>
+        <video controls>
+            <source src="https://github.com/GODOWNERV3/SUKUNA/raw/refs/heads/main/Screenrecorder-2025-03-13-10-15-30-567.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="download-container">
+            <a href="https://www.mediafire.com/file/YOUR_FILE_ID_2/YOUR_FILENAME_2.apk/file" class="download-btn" download>📥 Download File 2</a>
+        </div>
+    </div>
+
+    <!-- 📌 Video & Download for File 3 -->
+    <div class="video-container">
+        <h2>📌 File 3: Tutorial</h2>
+        <video controls>
+            <source src="https://github.com/GODOWNERV3/SUKUNA/raw/refs/heads/main/Screenrecorder-2025-03-14-12-20-40-678.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="download-container">
+            <a href="https://www.mediafire.com/file/YOUR_FILE_ID_3/YOUR_FILENAME_3.apk/file" class="download-btn" download>📥 Download File 3</a>
+        </div>
+    </div>
+
+    <!-- 📌 Telegram Button -->
+    <a href="https://t.me/Mysticsukuna" class="telegram-btn">💬 Chat on Telegram</a>
 
 </body>
 </html>
